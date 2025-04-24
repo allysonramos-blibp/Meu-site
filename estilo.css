@@ -1,0 +1,218 @@
+/* Importando fonte moderna */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Corpo */
+body {
+    background-color: #101010; /* Preto profundo */
+    color: #b8ffb8; /* Verde suave para texto */
+    text-align: center;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(135deg, #1b5e20, #2e7d32); /* Gradiente de tons verdes */
+    color: white;
+    padding: 50px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+}
+
+/* Foto de perfil */
+.profile-photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 255, 0, 0.5); /* Reflexo verde */
+}
+
+/* Títulos */
+h1, h2 {
+    color: #76ff76; /* Verde vibrante */
+    margin-bottom: 15px;
+}
+
+h1:hover {
+    animation: pulse 0.6s infinite alternate;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.08);
+    }
+}
+
+/* Seções */
+.section {
+    margin: 40px auto;
+    max-width: 700px;
+    padding: 20px;
+    background: #101010; /* Fundo preto */
+    color: #b8ffb8; /* Texto verde */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 255, 0, 0.3); /* Sombra verde */
+}
+
+.section h2 {
+    color: #76ff76; /* Verde vibrante */
+    margin-bottom: 15px;
+}
+
+/* Projetos */
+.projeto-card {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    background: #1b1b1b; /* Fundo preto mais claro */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 255, 0, 0.2); /* Sombra verde suave */
+}
+
+.projeto-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.projeto-card div {
+    text-align: left;
+}
+
+.projeto-card a {
+    color: #76ff76; /* Verde vibrante */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.projeto-card a:hover {
+    color: #b8ffb8; /* Verde suave */
+}
+
+/* Botão de alternância de tema */
+#toggleTheme {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #76ff76;
+    color: black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.2s;
+}
+
+#toggleTheme:hover {
+    background-color: #b8ffb8;
+    transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+    margin-top: 50px;
+    padding: 15px;
+    background: #1b5e20; /* Verde escuro */
+    color: white;
+    font-size: 14px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Efeito Fade-in */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Remover marcadores das listas */
+ul {
+    list-style-type: none;
+    padding: 0; /* Remove o espaçamento interno padrão */
+}
+ol {
+    list-style-type: none;
+    padding: 0; /* Remove o espaçamento interno padrão */
+}
+
+/* Redes Sociais */
+.contact-link {
+    color: #76ff76;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.contact-link:hover {
+    color: #b8ffb8; /* Verde mais suave */
+}
+
+/* Formulário de Contato */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #101010; /* Fundo preto */
+    color: #b8ffb8; /* Texto verde */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 255, 0, 0.3); /* Sombra verde */
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #76ff76; /* Verde */
+    border-radius: 6px;
+    background: #1b1b1b; /* Fundo escuro */
+    color: #b8ffb8; /* Texto verde */
+}
+
+form input::placeholder, form textarea::placeholder {
+    color: #76ff76; /* Verde vibrante */
+}
+
+form button {
+    background-color: #76ff76;
+    color: #101010;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background-color: #b8ffb8; /* Verde suave */
+}
